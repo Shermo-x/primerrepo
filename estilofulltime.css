@@ -1,0 +1,313 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* Ajustes generales */
+.text-center{
+    text-align: center;
+}
+/* xxxxxxxxxxxxxxBODYxxxxxxxxxxxxxx*/
+body{
+    background-color: rgb(235, 235, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* xxxxxxxxxxxxxxHEADERxxxxxxxxxxxxxx*/
+header{
+    font-family: 'Quicksand', sans-serif;
+}
+.header-banner{
+    background-image: url(img/zebra.jpg);
+}
+.fulltitulo{
+    width: 24%;
+    padding-left: 20px;
+    backface-visibility: unset;
+    background-size: 1rem;
+    background-color: lightpink;
+    color: black;
+    font-size: 5rem;
+}
+.back-full{
+    background-color:white;
+}
+.header__navbar-principal{
+    display: inline-block;
+    padding: 2rem ;
+    text-decoration: none;
+    font-size: 0px;
+}
+.header__navbar-principal li{
+    display: inline-block;
+}
+.header__navbar-principal a{
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: black;
+    padding: 1.1rem;
+    background-color: rgb(126, 213, 228);
+}
+/* xxxxxxxxxxxxxxfin-HEADERxxxxxxxxxxxxxx*/
+/* xxxxxxxxxxxxxxDISCOGRAFIAXXXXXXXXXXXXXX */
+/* descripcion del album */
+/* animate.style */
+.disco-flex{
+    display: flex;
+}
+#discografia{
+    background-color: gainsboro;
+    padding: 2rem;
+    width: 60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    overflow: hidden;
+}
+.disco-title{
+    font-size: 2rem;
+}
+.animal-print{
+    font-size: 1.5rem;
+}
+.animal-text{
+    font-size: 1rem;
+}
+.animal-image{
+    width: 500px;
+}
+.mike-image{
+    width: 500px;
+}
+.mike-image:hover, .mike-image:focus{ 
+    position:relative;
+    animation-name: mike-animation ;
+    animation-duration: 3s;
+}
+@keyframes mike-animation{
+    0%{
+        left: 0px;
+    }
+    25%{
+        left: 100px;
+    }
+    50%{
+        left: 200px;
+    }
+    75%{
+        left: -100px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+/* lista de canciones */
+.list-songs{
+    line-height: 2rem;
+    background-color: black;
+    color: rgb(255, 81, 0);
+    width: 40%;
+    padding: 2rem;
+    float: right;
+    text-decoration: none;
+}
+.songs li{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+/* canciones */
+/* entre galaxias */
+.general-flex-container{
+    display: flex;
+/* flex-wrap: wrap */
+flex-wrap: row wrap;
+clear: both;
+
+}
+#entre-galaxias, #mangifera{
+    background-image: linear-gradient(to left, rgb(126, 213, 228), lightpink);
+    text-align: center;
+    width: 50%;
+    clear: both;
+    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    line-height: 3rem;
+}
+/* full monkeys */
+#full-monkeys, #holaolala{
+    background-image: linear-gradient(to left, rgb(126, 213, 228), lightpink);
+    text-align: center;
+    width: 50%;
+    clear: both;
+    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    line-height: 3rem;
+}
+/* pantera */
+#pantera, #andromeda{
+    background-image: linear-gradient(to left, rgb(126, 213, 228), lightpink);
+    text-align: center;
+    width: 50%;
+    clear: both;
+    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    line-height: 3rem;
+}
+.general-song-navbar{
+display: flex;
+list-style: none;
+justify-content: space-around;
+}
+.buttons{
+    background-color: gainsboro;
+    border: 1px;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size:medium;
+    font-weight: 500;
+    padding:1rem;
+}
+.buttons:hover, .buttons:focus{
+    background-image: linear-gradient(to right, rgb(126, 213, 228), lightpink);
+}
+#mangifera{
+    background-image: linear-gradient(to right, rgb(126, 213, 228), lightpink);
+}
+#holaolala{
+    background-image: linear-gradient(to right, rgb(126, 213, 228), lightpink);
+}
+#andromeda{
+    padding-bottom: 10rem;
+    background-image: linear-gradient(to right, rgb(126, 213, 228), lightpink);
+}
+/* xxxxxxxxxxxxxxfin-DISCOGRAFIAXXXXXXXXXXXXXX */
+/* xxxxxxxxxxxxxxINTEGRANTESxxxxxxxxxxxxxxxxx */
+/* German Filchel */
+/*.integrantes-grid{
+    display: grid;
+    grid-template-rows: 9rem 3rem 3rem 3rem 3rem 3rem 3rem ;
+    grid-template-columns: 6rem 3rem 3rem 3rem 3rem 3rem 3rem ;
+}*/
+.integrantes-grid{
+    display: grid;
+    grid-template-areas: 
+    "nav img-principal img-b img-d img-f"
+    "nav img-principal img-c img-e img-g";
+    grid-template-columns: 6rem;
+    grid-template-rows: 12rem 12rem;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+/* juegos para practicar http://www.flexboxdefense.com/
+ https://cssgridgarden.com/#es
+*/
+.img-a{
+    grid-area: img-principal;
+    background-color: red;
+}
+.img-b{
+    grid-area: img-b;
+    background-color: rgb(126, 213, 228);
+}
+.img-c{
+    grid-area: img-c;
+    background-color: rgb(47, 0, 255);
+}
+.img-d{
+    grid-area: img-d;
+    background-color: rgb(255, 0, 170);
+}
+.img-e{
+    grid-area: img-e;
+    background-color: rgb(0, 255, 21);
+}
+.img-f{
+    grid-area: img-f;
+    background-color: rgb(255, 145, 0);
+}
+.img-g{
+    grid-area: img-g;
+    background-color: rgb(255, 230, 0);
+}
+/* xxxxxxxxxxxxxxCONTACTOxxxxxxxxxxxxxxxxxxx */
+#contacto{
+    clear: both;
+    background-color: gainsboro;
+}
+.formu-contact, .formu-contact-item{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: block !important;
+    padding-left: 2rem;
+}
+legend{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+fieldset{
+    background-color: lightpink;
+}
+.cuentanos-mas{
+    padding:2rem;
+}
+.cuentanos-mas-buttons{
+    display: block !important;
+}
+/* xxxxxxxxxxxxxxfin-CONTACTOxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxFOOTERxxxxxxxxxxxxxxx */
+footer{
+    clear: both;
+}
+.icon li{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.icon-pink {
+    color: rgb(185, 82, 189);
+}
+.icon-green{
+    color: green;
+}
+.footer-title{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+}
+/* xxxxxxxxxxxxxxfin-FOOTERxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxfin-BODYxxxxxxxxxxxxxx*/
+/* Tableta */
+/* Celular */
+@media(max-width: 1023px){
+    /* header */
+    .header__navbar-principal li{
+        display: block;
+        padding-top: 1rem;
+    }
+    /* canciones */
+    .general-flex-container{
+        flex-direction: column;
+    }
+    #entre-galaxias, #mangifera, #full-monkeys, #holaolala, #pantera, #andromeda{
+        width: 100%;
+    }
+    #full-monkeys{
+        background-color: rgb(126, 213, 228);
+    }
+    #holaolala{
+        background-color: lightpink;
+    }
+}
+ /* 2:15*/
+ /* git init git add y git commit */
