@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="estilofulltime.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
                     <li class="discografia">
                         <a href="#discografia">Discografia</a></li>
                     <li class="merch">
-                        <a href="#merchandising">Merchandising</a></li>
+                        <a href="#merch">Merchandising</a></li>
                     <li class="integrantes">
                         <a href="#integrantes">Integrantes</a></li>
                     <li class="contacto">
@@ -123,7 +124,47 @@
         <!-- xxxxxxxxxxxfin-DISCOGRAFIAxxxxxxxxxxxx -->
         <!-- xxxxxxxxxxxxxxMERCHANDISINGxxxxxxxxxxxxx -->
         <section id="merch">
-
+            <h2>Merchandising</h2>
+            <!-- carousel -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/merch1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Lleva el estilo siempre</h5>
+                      <p>Descubri las mejores prendas del mejor estilo Full Time</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/merch2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Autumn Season 2021</h5>
+                      <p>Abrigos livianos para romper el otoño</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/merch3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Descubri las calles</h5>
+                      <p>Ropa de primera calidad y comoda para usar siempre</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- fin carousel -->
         </section>
         <!-- xxxxxxxxxxxxxxxfin-MERCHANDISINGxxxxxxxxxxxx -->
         <!-- xxxxxxxxxxxxxxINTEGRANTESxxxxxxxxxxxxxxx -->
@@ -246,5 +287,7 @@
     </footer>
 </body>
 <!-- Script Fontawesome -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/f7394c1c60.js" crossorigin="anonymous"></script>
 </html>
