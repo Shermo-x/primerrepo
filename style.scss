@@ -1,0 +1,34 @@
+
+/* Tableta */
+/* Celular */
+@media(max-width: 1023px){
+    /* header */
+    .header__navbar-principal li{
+        display: block;
+        padding-top: 1rem;
+    }
+    /* canciones */
+    .general-flex-container{
+        flex-direction: column;
+    }
+    #entre-galaxias, #mangifera, #full-monkeys, #holaolala, #pantera, #andromeda{
+        width: 100%;
+    }
+    #full-monkeys{
+        background-color: $bg-celeste
+    }
+    #holaolala{
+        background-color: $bg-rosa;
+    }
+}
+ /* 2:15*/
+ /* git init git add y git commit */
+/*1:11*/
+/*imports*/
+@import "general";
+@import "header";
+@import "discografia";
+@import "integrantes";
+@import "merchandising";
+@import "contacto";
+@import "footer";

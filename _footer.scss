@@ -1,0 +1,29 @@
+footer{
+    clear: both;
+}
+.icon li{
+    text: {
+        transform: uppercase;
+        decoration: none;
+    }
+    font-size: 2rem;
+    display: inline-block;
+}
+.icon-pink {
+    color: rgb(185, 82, 189);
+}
+.icon-green{
+    color: green;
+}
+.footer-title{
+    padding: {
+        left: 2rem;
+        right: 2rem;
+    }
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+}

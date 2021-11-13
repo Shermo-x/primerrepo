@@ -1,0 +1,373 @@
+/* Ajustes generales */
+.text-center {
+  text-align: center;
+}
+
+/* xxxxxxxxxxxxxxBODYxxxxxxxxxxxxxx*/
+body {
+  background-color: #ebebeb;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* xxxxxxxxxxxxxxHEADERxxxxxxxxxxxxxx*/
+/* xxxxxxxxxxxxxxfin-HEADERxxxxxxxxxxxxxx*/
+/* xxxxxxxxxxxxxxDISCOGRAFIAXXXXXXXXXXXXXX */
+/* xxxxxxxxxxxxxxfin-DISCOGRAFIAXXXXXXXXXXXXXX */
+/* xxxxxxxxxxxxxxINTEGRANTESxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxCONTACTOxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxfin-CONTACTOxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxFOOTERxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxfin-FOOTERxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxfin-BODYxxxxxxxxxxxxxx*/
+/* Tableta */
+/* Celular */
+@media (max-width: 1023px) {
+  /* header */
+  .header__navbar-principal li {
+    display: block;
+    padding-top: 1rem;
+  }
+  /* canciones */
+  .general-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #entre-galaxias, #mangifera, #full-monkeys, #holaolala, #pantera, #andromeda {
+    width: 100%;
+  }
+  #full-monkeys {
+    background-color: #7ed5e4;
+  }
+  #holaolala {
+    background-color: lightpink;
+  }
+}
+
+/* 2:15*/
+/* git init git add y git commit */
+/*1:11*/
+header {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header-banner {
+  background-image: url(img/zebra.jpg);
+}
+
+.fulltitulo {
+  background-size: 1rem;
+  background-color: lightpink;
+  width: 24%;
+  padding-left: 20px;
+  -webkit-backface-visibility: unset;
+          backface-visibility: unset;
+  color: black;
+  font-size: 5rem;
+}
+
+.back-full {
+  background-color: white;
+}
+
+.header__navbar-principal {
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 0px;
+}
+
+.header__navbar-principal li {
+  display: inline-block;
+}
+
+.header__navbar-principal a {
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: black;
+  padding: 1.1rem;
+  background-color: #7ed5e4;
+}
+
+/* descripcion del album */
+/* animate.style */
+.disco-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#discografia {
+  background-color: gainsboro;
+  padding: 2rem;
+  width: 60%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  float: left;
+  overflow: hidden;
+}
+
+.disco-title {
+  font-size: 2rem;
+}
+
+.animal-print {
+  font-size: 1.5rem;
+}
+
+.animal-text {
+  font-size: 1rem;
+}
+
+.animal-image {
+  width: 500px;
+}
+
+.mike-image {
+  width: 500px;
+}
+
+.mike-image:hover, .mike-image:focus {
+  position: relative;
+  -webkit-animation-name: mike-animation;
+          animation-name: mike-animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes mike-animation {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: 200px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes mike-animation {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: 200px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+/* lista de canciones */
+.list-songs {
+  line-height: 2rem;
+  background-color: black;
+  color: #ff5100;
+  width: 40%;
+  padding: 2rem;
+  float: right;
+  text-decoration: none;
+}
+
+.songs li {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* canciones */
+/* entre galaxias */
+.general-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex-wrap: wrap */
+  -ms-flex-wrap: row wrap;
+      flex-wrap: row wrap;
+  clear: both;
+}
+
+#entre-galaxias, #mangifera, #full-monkeys, #holaolala, #pantera, #andromeda {
+  background-image: -webkit-gradient(linear, right top, left top, from(#7ed5e4), to(lightpink));
+  background-image: linear-gradient(to left, #7ed5e4, lightpink);
+  text-align: center;
+  width: 50%;
+  clear: both;
+  padding-padding: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  line-height: 3rem;
+}
+
+.general-song-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.buttons {
+  background-color: gainsboro;
+  border-border: 1px;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.buttons:hover, .buttons:focus, #mangifera, #holaolala, #andromeda {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed5e4), to(lightpink));
+  background-image: linear-gradient(to right, #7ed5e4, lightpink);
+}
+
+#andromeda {
+  padding-bottom: 10rem;
+}
+
+/* German Filchel */
+.integrantes-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav img-principal img-b img-d img-f" "nav img-principal img-c img-e img-g";
+  -ms-grid-columns: 6rem;
+      grid-template-columns: 6rem;
+  -ms-grid-rows: 12rem 12rem;
+      grid-template-rows: 12rem 12rem;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+/* juegos para practicar http://www.flexboxdefense.com/
+ https://cssgridgarden.com/#es
+*/
+.img-a {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: img-principal;
+  background-color: red;
+}
+
+.img-b {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: img-b;
+  background-color: #7ed5e4;
+}
+
+.img-c {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: img-c;
+  background-color: #2f00ff;
+}
+
+.img-d {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: img-d;
+  background-color: #ff00aa;
+}
+
+.img-e {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: img-e;
+  background-color: #00ff15;
+}
+
+.img-f {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: img-f;
+  background-color: #ff9100;
+}
+
+.img-g {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: img-g;
+  background-color: #ffe600;
+}
+
+#contacto {
+  clear: both;
+  background-color: gainsboro;
+}
+
+.formu-contact, .formu-contact-item {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  display: block !important;
+  padding-left: 2rem;
+}
+
+legend {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+}
+
+fieldset {
+  background-color: lightpink;
+}
+
+.cuentanos-mas {
+  padding: 2rem;
+}
+
+.cuentanos-mas-buttons {
+  display: block !important;
+}
+
+footer {
+  clear: both;
+}
+
+.icon li {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.icon-pink {
+  color: #b952bd;
+}
+
+.icon-green {
+  color: green;
+}
+
+.footer-title {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: inline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=style.css.map */

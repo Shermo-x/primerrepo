@@ -1,0 +1,40 @@
+header{
+    font-family: 'Quicksand', sans-serif;
+}
+.header-banner{
+    background-image: url(img/zebra.jpg);
+}
+.fulltitulo{
+    background: {
+        size: 1rem;
+        color: $bg-rosa;
+    }
+    width: 24%;
+    padding-left: 20px;
+    backface-visibility: unset;
+    color: black;
+    font-size: 5rem;
+}
+.back-full{
+    background-color:white;
+}
+.header__navbar-principal{
+    display: inline-block;
+    padding: 2rem ;
+    text-decoration: none;
+    font-size: 0px;
+}
+.header__navbar-principal li{
+    display: inline-block;
+}
+.header__navbar-principal a{
+    text: {
+        decoration: none;
+        align: right;
+        transform: uppercase;
+    }
+    font-size: 2rem;
+    color: black;
+    padding: 1.1rem;
+    background-color: rgb(126, 213, 228);
+}

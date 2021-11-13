@@ -1,0 +1,27 @@
+#contacto{
+    clear: both;
+    background-color: $bg-gris;
+}
+.formu-contact, .formu-contact-item{
+    font: {
+        family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        size: 20px;
+    }
+    display: block !important;
+    padding-left: 2rem;
+}
+legend{
+    font: {
+        family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        size: 30px;
+    }
+}
+fieldset{
+    background-color: $bg-rosa;
+}
+.cuentanos-mas{
+    padding:2rem;
+}
+.cuentanos-mas-buttons{
+    display: block !important;
+}

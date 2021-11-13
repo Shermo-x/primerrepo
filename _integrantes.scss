@@ -1,0 +1,49 @@
+/* German Filchel */
+// .integrantes-grid{
+//     display: grid;
+//     grid-template-rows: 9rem 3rem 3rem 3rem 3rem 3rem 3rem ;
+//     grid-template-columns: 6rem 3rem 3rem 3rem 3rem 3rem 3rem ;
+// }
+.integrantes-grid{
+    display: grid;
+    grid: {
+        template-areas:
+        "nav img-principal img-b img-d img-f"
+        "nav img-principal img-c img-e img-g";
+        template-columns: 6rem;
+        template-rows: 12rem 12rem;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+}
+/* juegos para practicar http://www.flexboxdefense.com/
+ https://cssgridgarden.com/#es
+*/
+.img-a{
+    grid-area: img-principal;
+    background-color: red;
+}
+.img-b{
+    grid-area: img-b;
+    background-color: rgb(126, 213, 228);
+}
+.img-c{
+    grid-area: img-c;
+    background-color: rgb(47, 0, 255);
+}
+.img-d{
+    grid-area: img-d;
+    background-color: rgb(255, 0, 170);
+}
+.img-e{
+    grid-area: img-e;
+    background-color: rgb(0, 255, 21);
+}
+.img-f{
+    grid-area: img-f;
+    background-color: rgb(255, 145, 0);
+}
+.img-g{
+    grid-area: img-g;
+    background-color: rgb(255, 230, 0);
+}
